@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:snake_game/src/core/core.dart';
 import 'package:snake_game/src/core/theme/theme.dart';
 
 class PresentationView extends StatelessWidget {
@@ -18,17 +18,17 @@ class PresentationView extends StatelessWidget {
         // New game button -----------------------------------------
         // =========================================================
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pushNamed(ApplicationRoutes.gameView),
           child: const Text('New Game'),
         ),
 
         const SizedBox(width: 8), // Widgets Spacing
 
         // =========================================================
-        // New game button -----------------------------------------
+        // View your score button ----------------------------------
         // =========================================================
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pushNamed(ApplicationRoutes.scoreView),
           style: Theme.of(context).brightness.name == 'dark' ? ButtonsThemeData.viewScoreDark : ButtonsThemeData.viewScoreWhite,
           child: const Text('viewScore'),
         ),

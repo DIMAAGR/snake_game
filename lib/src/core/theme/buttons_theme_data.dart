@@ -10,13 +10,18 @@ class ButtonsThemeData {
         elevation: 0,
         backgroundColor: Colors.pink[700],
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        textStyle: TextStylesThemeData.standartDarkThemebutton,
+        textStyle: TextStylesThemeData.standartThemebutton,
       );
 
   // ===================================================================
   // Elevated Button White Theme Getter >>
   // ===================================================================
-  static ButtonStyle get whiteElevatedButtonStyle => ElevatedButton.styleFrom();
+  static ButtonStyle get whiteElevatedButtonStyle => ElevatedButton.styleFrom(
+        elevation: 0,
+        backgroundColor: Colors.greenAccent[700],
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        textStyle: TextStylesThemeData.standartThemebutton,
+      );
 
   // ===================================================================
   // VIEW SCORE - Dark
@@ -26,7 +31,7 @@ class ButtonsThemeData {
     backgroundColor: const Color.fromARGB(255, 40, 40, 40),
     side: const BorderSide(color: Color(0xFFC2185B), width: 1.5),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-    textStyle: TextStylesThemeData.standartDarkThemebutton,
+    textStyle: TextStylesThemeData.standartThemebutton,
   );
 
   // ===================================================================
@@ -36,6 +41,6 @@ class ButtonsThemeData {
         elevation: 0,
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        textStyle: TextStylesThemeData.standartDarkThemebutton,
+        textStyle: TextStylesThemeData.standartThemebutton,
       );
 }

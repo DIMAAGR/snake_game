@@ -11,7 +11,7 @@ class TextStylesThemeData {
   // ========================================================================================
   // STANDART DARK THEME BUTTON TEXT STYLE
   // ========================================================================================
-  static TextStyle standartDarkThemebutton = GoogleFonts.roboto(fontSize: 14, fontWeight: FontWeight.w700, letterSpacing: 1.2);
+  static TextStyle standartThemebutton = GoogleFonts.roboto(fontSize: 14, fontWeight: FontWeight.w700, letterSpacing: 1.2);
 
   // ========================================================================================
   // END

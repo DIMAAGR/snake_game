@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snake_game/src/core/theme/app_bar_theme_data.dart';
 import 'package:snake_game/src/core/theme/buttons_theme_data.dart';
 
 class ApplicationTheme {
@@ -7,6 +8,7 @@ class ApplicationTheme {
   // ===========================================================
   static ThemeData get whiteTheme => ThemeData(
         scaffoldBackgroundColor: const Color.fromARGB(255, 250, 250, 250),
+        elevatedButtonTheme: ElevatedButtonThemeData(style: ButtonsThemeData.whiteElevatedButtonStyle),
         brightness: Brightness.light,
       );
 
@@ -17,5 +19,6 @@ class ApplicationTheme {
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color.fromARGB(255, 40, 40, 40),
         elevatedButtonTheme: ElevatedButtonThemeData(style: ButtonsThemeData.darkElevatedButtonStyle),
+        appBarTheme: ApplicationAppBarTheme.darkAppBarTheme,
       );
 }
